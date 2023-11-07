@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Histogram Generator</title>
+    <link rel="stylesheet" href="histogram.css" />
+  </head>
+  <body>
+    <div id= "messageBOX"></div>
+    <div class="big-container">
+      <h1>Histogram Generator</h1>
+      <input type="file" class="upload-bttm" id="fileUpload" accept=".csv"/>
+      <br />
+      <div class="function-cont">
+        <div class="left-section">
+          <div class="sec-container">
+            <div class="lower-bound">
+              <h2>Lower Bounds</h2>
+              <table class="datable">
+                <tr>
+                  <td>Max</td>
+                  <td>
+                    <input class="bounds" type="number" id="gradeMax" value="100.00" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>A+</td>
+                  <td>
+                    <input class="bounds" type="number" id="gradeAP" value="95.00" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>A</td>
+                  <td>
+                    <input class="bounds" type="number" id="gradeA" value="90.00" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>A-</td>
+                  <td>
+                    <input class="bounds" type="number" id="gradeAM" value="85.00" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>B+</td>
+                  <td>
+                    <input class="bounds" type="number" id="gradeBP" value="80.00" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>B</td>
+                  <td>
+                    <input class="bounds" type="number" id="gradeB" value="75.00" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>B-</td>
+                  <td>
+                    <input class="bounds" type="number" id="gradeBM" value="70.00" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>C+</td>
+                  <td>
+                    <input class="bounds" type="number" id="gradeC+" value="65.00" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>C</td>
+                  <td>
+                    <input class="bounds" type="number" id="gradeC" value="60.00" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>C-</td>
+                  <td>
+                    <input class="bounds" type="number" id="gradeCM" value="55.00" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>D</td>
+                  <td>
+                    <input class="bounds" type="number" id="gradeD" value="50.00" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>F</td>
+                  <td>
+                    <input class="bounds" type="number" id="gradeF" value="0.00" />
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="right-section">
+          <div class="sec-container">
+            <section class="Histogram">
+              <h2>Histogram</h2>
+              <table class="datable">
+                <tr>
+                  <td class="his-display">A+</td>
+                  <td id="AP">◼️◻️◻️◻️◻️◻️◻️◻️</td>
+                </tr>
+                <tr>
+                  <td class="his-display">A</td>
+                  <td id="A">◼️◼️◻️◻️◻️◻️◻️◻️</td>
+                </tr>
+                <tr>
+                  <td class="his-display">A-</td>
+                  <td id="AM">◼️◼️◻️◻️◻️◻️◻️◻️</td>
+                </tr>
+                <tr>
+                  <td class="his-display">B+</td>
+                  <td id="BP">◼️◼️◼️◻️◻️◻️◻️◻️</td>
+                </tr>
+                <tr>
+                  <td class="his-display">B</td>
+                  <td id="B">◼️◼️◼️◼️◼️◻️◻️◻️</td>
+                </tr>
+                <tr>
+                  <td class="his-display">B-</td>
+                  <td id="BM">◼️◼️◼️◼️◼️◻️◻️◻️</td>
+                </tr>
+                <tr>
+                  <td class="his-display">C+</td>
+                  <td id="CP">◼️◼️◼️◼️◻️◻️◻️◻️</td>
+                </tr>
+                <tr>
+                  <td class="his-display">C</td>
+                  <td id="C">◼️◼️◼️◼️◻️◻️◻️◻️</td>
+                </tr>
+                <tr>
+                  <td class="his-display">C-</td>
+                  <td id="CM">◼️◼️◼️◼️◻️◻️◻️◻️</td>
+                </tr>
+                <tr>
+                  <td class="his-display">D</td>
+                  <td id="D">◼️◼️◼️◻️◻️◻️◻️◻️</td>
+                </tr>
+                <tr>
+                  <td class="his-display">F</td>
+                  <td id="F">◼️◼️◻️◻️◻️◻️◻️◻️</td>
+                </tr>
+              </table>
+            </section>
+          </div>
+          <br />
+          <div class="sec-container">
+            <section class="stats-section">
+              <h2>Stats</h2>
+              <ul>
+                <p>Highest: <span id="highest"> N/A (100.00%)</span></p>
+                <p>Lowest: <span id="lowest">N/A (0.00%)</span></p>
+                <p>Mean: <span id="mean">upload a .csv 📁</span></p>
+                <p>Median: <span id="median">upload a .csv 📁</span></p>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="calculate.js"></script>
+  </body>
+</html>
