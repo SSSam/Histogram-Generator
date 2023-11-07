@@ -4,5 +4,5 @@
 - Proper error handling has been established.
 - Custom CSS styling 
 
-<img width="960" alt="histogram generator landing" src="https://github.com/SSSam/Histogram-Generator/assets/72668861/d8eadc4c-21d9-438c-862b-351bd76664bc">
-<img width="960" alt="histogram generator datainput" src="https://github.com/SSSam/Histogram-Generator/assets/72668861/e15c2c1f-e347-4900-a806-ee0010dd954c">
+![landing page](https://github.com/SSSam/Histogram-Generator/blob/main/histogram%20generator%20landing.png)
+![Input data](https://github.com/SSSam/Histogram-Generator/blob/main/histogram%20generator%20datainput.png)
